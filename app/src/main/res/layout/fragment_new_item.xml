@@ -1,0 +1,248 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="ir.mojtaba.mymarketplace.NewItemFragment">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:minHeight="200dip"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView3" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/itemCategoryChoose">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_category"
+                        android:id="@+id/labelCategory"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_category"
+                        android:id="@+id/labelItemCategory"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/dark_blue" />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:id="@+id/imageView"
+                        android:src="@drawable/ic_action_right_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_bg" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/locationContainer">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:gravity="center_vertical|right"
+                        android:id="@+id/linearLayout"
+                        android:layout_gravity="right">
+
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Country"
+                                android:id="@+id/locationCountry"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="0"
+                                android:singleLine="true"
+                                android:textColor="@color/dark_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="City"
+                                android:id="@+id/locationCity"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:layout_marginRight="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/dark_blue" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_post_location"
+                            android:id="@+id/labelLocation"
+                            android:textColor="@color/black"/>
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:id="@+id/locationDelete"
+                            android:src="@drawable/ic_action_remove" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_bg" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_add_location"
+                        android:id="@+id/addLocation"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="0"
+                        android:singleLine="true"
+                        android:textColor="@color/dark_blue"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/photoContainer"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/content_page"
+                        android:padding="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/choiceItemImg"
+                            android:src="@drawable/ic_action_camera"
+                            android:scaleType="centerCrop" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_select_img"
+                            android:id="@+id/selectItemPhoto"
+                            android:textSize="16dp"
+                            android:textColor="@color/dark_blue"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/itemTitle"
+                        android:maxLength="256"
+                        android:layout_margin="16dp"
+                        android:hint="@string/label_item_title_placeholder"
+                        android:gravity="right"
+                        android:layout_gravity="right"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/itemPrice"
+                        android:maxLength="9"
+                        android:layout_margin="16dp"
+                        android:hint="@string/label_item_price_placeholder"
+                        android:inputType="numberSigned"
+                        android:gravity="right"
+                        android:layout_gravity="right"/>
+
+                    <github.ankushsachdeva.emojicon.EmojiconEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/itemDescription"
+                        android:hint="@string/label_item_description_placeholder"
+                        android:scrollbarStyle="outsideInset"
+                        android:scrollbars="vertical"
+                        android:maxLength="1000"
+                        android:textSize="16dp"
+                        emojicon:emojiconSize="24dp"
+                        android:overScrollMode="never"
+                        android:layout_margin="16dp"
+                        android:gravity="right"
+                        android:layout_gravity="right"/>
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_allow_comments"
+                        android:id="@+id/allowComments"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:checked="true"
+                        android:layout_gravity="right"
+                        android:gravity="right"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

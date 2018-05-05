@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "276296983946",
+    "firebase_url": "https://androidlife-2c913.firebaseio.com",
+    "project_id": "androidlife-2c913",
+    "storage_bucket": "androidlife-2c913.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276296983946:android:42079b964ef9be3c",
+        "android_client_info": {
+          "package_name": "info.korosh.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276296983946-nii68nm95ohe9k264jcg86c8qa3psuic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwQPM948AV5Xk548ULIW9N2aeZs4wRp_w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276296983946:android:4c95d35ddd7319ee",
+        "android_client_info": {
+          "package_name": "ir.mojtaba.mymarketplace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276296983946-nii68nm95ohe9k264jcg86c8qa3psuic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwQPM948AV5Xk548ULIW9N2aeZs4wRp_w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
